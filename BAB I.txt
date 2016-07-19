@@ -1,0 +1,58 @@
+BAB I
+PENDAHULUAN
+1.1.	Latar Belakang
+Perkembangan teknologi pada saat ini mengalami peningkatan yang sangat pesat. Hal itu dapat dilihat dari banyaknya inovasi terhadap teknologi itu sendiri, seperti handphone yang dulunya hanya bisa digunakan untuk menelpon atau mengirim pesan singkat saja kini handphone dapat digunakan untuk mengambil foto, browsing di internet, mendengarkan radio dan lain sebagainya. Handphone yang dapat melakukan segala macam pekerjaan disebut sebagai smartphone.
+Internet merupakan salah satu bukti perkembangan teknologi yang ada saat ini. Banyak berbagai macam ilmu dan pengetahuan yang terdapat di dalam internet. Melalui internet masyarakat dapat mencari ilmu ataupun informasi baru yang saat ini sedang booming. Maka dengan perkembangan teknologi tersebut menuntut masyarakat untuk mengetahui serta mengikuti derasnya arus informasi saat itu dari berbagai macam bidang.
+Indonesia merupakan negara berkembang yang terpengaruh dengan derasnya arus perkembangan teknologi di dunia. Hal ini dapat dilihat dari banyaknya jumlah pengguna internet di Indonesia. Menurut Kementerian Komunikasi dan Informatika (Kominfo) Republik Indonesia menyatakan bahwa pengguna internet di Indonesia mencapai 80 juta orang, yang berarti Indonesia menduduki peringkat ke-8 di dunia sebagai pengguna internet terbanyak. Melihat dari banyaknya pengguna internet di Indonesia, maka banyak perusahaan-perusahaan di Indonesia berlomba-lomba untuk menciptakan suatu hal yang baru, salah satunya adalah dengan membangun suatu situs yang berisi mengenai berita (surat kabar online). Situs berita online sudah mengklasifikasikan beritanya berdasarkan topik-topik berita. Klasifikasi tersebut bertujuan untuk mempermudah pembaca dalam proses pencarian berita berdasarkan kategori topik berita. Pembuatan sistem klasifikasi berita online secara otomatis sangat dibutuhkan untuk menggantikan proses manual sehingga dapat mempercepat proses klasifikasi.
+Algoritma K-Nearest Neighbour atau biasa disingkat dengan istilah KNN biasa digunakan dalam proses klasifikasi, salah satunya dalam klasifikasi teks. Algoritma K-Nearest Neighbour merupakan algoritma yang melakukan klasifikasi berdasarkan kedekatan lokasi (jarak) suatu data dengan data yang lain [1]. Untuk mengetahui jarak antar data baru dengan data lama dapat dilakukan dengan menghitung bobot data-data tersebut berdasarkan fitur yang ada, kemudian bobot tersebut akan dicocokan dan dihitung jaraknya.
+Algoritma Naïve Bayes merupakan suatu metode yang digunakan untuk mengklasifikasikan suatu objek berdasarkan perhitungan probabilitas. Algoritma Naïve Bayes akan memprediksi suatu objek dengan memperhitungkan probabilitas suatu bukti untuk dijadikan sebagai hipotesis.
+Penelitian kali ini akan menggabungkan kedua algoritma diatas, yaitu K-Nearest Neighbour dan Naïve Bayes untuk mengkategorikan berita online dari beberapa situs berita ke dalam topik berita yang sesuai dengan klasifikasi berita online secara otomastis. Penelitian kali ini mengambil judul “Implementasi Naïve Bayes dan K-Nearest Neighbour dalam Kategorisasi Artikel Berita di Internet”.
+1.2.	Perumusan Masalah
+Berdasarkan rumusan masalah yang dipaparkan di atas, maka diambilah suatu rumusan masalah sebagai berikut:
+1.	Bagaimanakah implementasi metode K-Nearest Neighbour dan Naïve Bayes dalam mengkategorisasikan artikel dari situs berita online?
+2.	Berapakah akurasi yang didapat dari penggunuaan metode K-Nearest Neighbour dan Naïve Bayes dalam mengkategorisasikan artikel dari situs berita online?
+1.3.	Batasan Masalah
+Penelitian ini memiliki batasan terhadap objek yang akan dibahas, mengingat adanya keterbatasan waktu dalam proses penelitian ini, selain itu juga agar penelitian yang akan dilakukan tidak melebar ke topik lainnya. Adapun batasan masalah dalam penelitian ini adalah:
+1.	Metode yang digunakan dalam penelitia ini adalah metode K-Nearest Neighbour dan Naïve Bayes.
+2.	Perangkat lunak yang akan dibuat berbasis website menggunakan PHP dan MySQL.
+Artikel berita online yang digunakan merupakan artikel yang berasal dari situs berita www.detik.com, www.kompas.com, www.liputan6.com, www.viva.co.id, dan www.merdeka.com.
+1.4.	Tujuan Penelitian
+Berdasarkan rumusan masalah yang dipaparkan di atas, maka tujuan dari penelitian ini adalah:
+1.	Untuk mengimplementasikan metode K-Nearest Neighbour dan Naïve Bayes dalam mengkategorisasikan artikel dari situs berita online.
+2.	Untuk mengetahui akurasi yang didapat dalam mengkategorikan artikel berita online dengan menggunakan metode K-Nearest Neighbour dan Naïve Bayes.
+1.5.	Manfaat Penelitian
+Manfaat dari penelitian ini diharapkan dapat mengimplementasikan suatu metode, yaitu metode K-Nearest Neighbour dan Naïve Bayes untuk mengkategorisasi artikel berita online, serta aplikasi yang dibuat dapat membantu dalam mengkategorikan artikel yang berasal dari situs berita online tanpa harus menggunakan proses manual. Selain itu juga dapat mengetahui nilai akurasi yang didapat dari penggunaan metode K-Nearest Neighbour dan Naïve Bayes, khususnya dalam mengkategorisasikan berita online.
+1.6.	State of The Art
+Penelitian-penelitian yang pernah dilakukan mengenai text mining pada saat ini sudah banyak dilakukan oleh para peneliti di luar sana. Penelitian-penelitian tersebut menjelaskan bagaimana mengelola data berupa teks untuk dikelompokkan ke dalam beberapa kategori. Maka dari itu, penelitian yang akan dilakukan kali ini akan dibandingkan dengan beberapa paper yang membahas mengenai topik yang hampir sama dengan penelitian ini. Berikut adalah beberapa paper yang dijadikan sebagai referansi dalam melakukan penelitian untuk Tugas Akhir, diantaranya:
+1.	Andreas Daniel Arifin, Isye Arieshanti, dan Agus Zainal Arifin dengan paper yang berjudul “Implementasi Algoritma K-Nearest Neighbour yang Berdasarkan One Pass Clustering untuk Kategorisasi Teks”. Paper ini membahas mengenai teks-teks yang dikategorikan ke dalam kategori tertentu, serta membandingkan performa one pass KNN dengan KNN konvesional [2].
+2.	Yoseph Samuel, Rosa Delima, dan Antonius Rachmat dengan paper yang berjudul “Implementasi Metode K-Nearest Neighbour dengan Decision Rule untuk Klasifikasi Subtopik Berita”. Paper ini membahas mengenai berita-berita yang terdapat pada situs website, seperti bbc.com, cnn.com, dan foxnews.com akan dikategorikan berdasarkan topik olahraga yang terbagi menjadi tujuh subtopic [3].
+3.	Amir Hamzah dengan paper yang berjudul “Klasifikasi Teks dengan Naïve Bayes Classifier (NBC) untuk Pengelompokkan Teks Berita dan Abstract Akademis”. Paper ini meneliti performa algoritma NBC dalam kategorisasi teks yang berupa teks berita dan teks akademis berupa abstrak akademis dari berbagai disiplin ilmu [4].
+4.	Selvia Lorena Br Ginting dan Reggy Pasya Trinanda dengan paper yang berjudul “Penggunaan Metode Naïve Bayes Classifier pada Aplikasi Perpustakaan”. Paper ini membahas mengenai klasifikasi judul dan kategori buku di database perpustakaan agar memudahkan pengunjung untuk mengatahui list buku beserta tempat penyimpanannya [5].
+5.	Ahmad Hatta, Nana Ramadijanti, Afrida Helen dengan paper yang berjudul “Rancang Bangun Sistem Pengelolaan Dokumen-Dokumen Penting Menggunakan Text Mining”. Paper ini membahas mengenai pengelompokkan dokumen-dokumen penting, seperti KTP ke dalam tipe-tipenya. Dokumen tersebut akan diubah, yang sebelumnya dokumen berbentuk hardcopy (kertas) menjadi dokumen berbentuk data digital [6].
+Tabel 1.1 State of The Art
+Peneliti	Studi Kasus	Metode Pemecahan Masalah	Tools yang digunakan	Rancangan Sistem
+Arifin, dkk	Dataset Reuters-21578	Algoritma K-Nearest Neighbour 	Java Runtime Environtment 	Perancangan sistem berbasis 
+Tabel 1.1 State of The Art (Lanjut...)
+Peneliti	Studi Kasus	Metode Pemecahan Masalah	Tools yang digunakan	Rancangan Sistem
+		berdasarkan One Pass Clustering	1.6.0.29 dan XAMPP 1.7.7	objek
+Samuel, dkk	Berita pada situs bbc.com, cnn.com, dan foxnews.com	Metode K-Nearest Neighbour dengan Decision Rule	Visual Basic.NET 2010	Perancangan sistem terstruktur
+Hamzah	teks berita dan teks akademis berupa abstrak akademis dari berbagai disiplin ilmu	Naïve Bayes Classifier (NBC)	Java	Perancangan sistem berbasis objek
+Ginting dan Trinanda	List buku di perpustakaan	Metode Naïve Bayes Classifier	Java	Perancangan sistem berbasis objek
+Hatta, dkk	Dokumen-dokumen penting yang berbentuk hardcopy	Algoritma K-Nearest Neighbour	Java	Perancangan sistem berbasis objek
+Siti Nurpadilah	Artikel berita dari detik.com, kompas.com,	Algoritma K-Nearest Neighbour 	PHP, MySQL	Perancangan sistem berbasis 
+
+Tabel 1.1 State of The Art (Lanjut...)
+Peneliti	Studi Kasus	Metode Pemecahan Masalah	Tools yang digunakan	Rancangan Sistem
+	liputan6.com, viva.co.id, merdeka.com	dan Naïve Bayes Classifier		website
+
+DAFTAR PUSTAKA
+[1] 	Prasetyo, E. (2012). Data Mining - Konsep dan Aplikasi Menggunakan MATLAB. Yogyakarta: C.V Andi Offset.
+[2]	Arifin, A. D., Arieshanti, I., dan Arifin, A. Z. (t.thn.). Implementasi Algoritma K-Nearest Neighbour yang Berdasarkan One Pass Clustering untuk Kategorisasi Teks. 1.
+[3]	Samuel, Y., Delima, R., dan Rachmat, A. (2014). Implementasi Metode K-Nearest Neighbour dengan Decision Rule untuk Klasifikasi Subtopik Berita. Jurnal Informatika, 1-15.
+[4]	Hamzah, A. (2012). Klasifikasi Teks dengan Naive Bayes Classifier (NBC) untuk Pengelompokan Teks Berita dan Abstract Akademis. Prosiding Seminar Nasional Aplikasi Sains & Teknologi (SNAST) Periode III, B-269 – B-277.
+[5]	Ginting, S. L., & Trinanda, R. P. (t.thn.). Penggunaan Metode Naive Bayes Classifier pada Aplikasi Perpustakaan. 1-7.
+[6]	Hatta, A., Ramadijanti, N., & Helen, A. (t.thn.). Rancang Bangun Sistem Pengelolaan Dokumen-Dokumen Penting Menggunakan Text Mining. 1-4.
+
+ References
+
+
